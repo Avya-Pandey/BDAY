@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .background-image {
+            background-image: url('birthday.jpeg');
+            background-size: cover;
+            background-position: center;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            opacity: 0;
+        }
+
+        .carousel-container {
+            position: relative;
+            overflow: hidden;
+            margin-top: 20px;
+        }
+
+        .carousel {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+        }
+
+        .motivational-messages, .automated-carousel {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+
+        .message, .automated-image {
+            flex: 0 0 calc(25% - 10px);
+            text-align: center;
+            font-size: 16px;
+            padding: 10px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+    </style>
+    <script src="script.js"></script>
+    <title>Final Page</title>
+</head>
+<body class="body">
+    <div class="background-image"></div>
+    <div class="carousel-container">
+        <div class="carousel">
+            
+            <div class="message">Hope You Enjoyed the Video made for you.</div>
+            <div class="message">Remember to always stay as young, good-looking and intelligent as always</div>
+            <div class="message">The Whole family loves you too much to be expressed by words</div>
+            <div class="message">And have the bestest possible birthday EVER!!!!!</div>
+
+        </div>
+        <div class="carousel-buttons">
+            <center>
+          
+            <button onclick="nextMessage()">❯</button>
+        </center>
+        </div>
+    </div>
+   <!-- Update these parts in your final.html file -->
+
+<div class="automated-carousel">
+    <div class="automated-image active-photo"><img src="mam1.jpeg" alt="Image1"></div>
+    <div class="automated-image"><img src="mam2.jpeg" alt="Image2"></div>
+    <div class="automated-image"><img src="mam3.jpeg" alt="Image3"></div>
+    <div class="automated-image"><img src="mam4.jpeg" alt="Image4"></div>
+    <div class="automated-image"><img src="mam5.jpeg" alt="Image5"></div>
+    <div class="automated-image"><img src="mam6.png" alt="Image6"></div>
+</div>
+
+<audio autoplay loop>
+    <source src="Ed Sheeran - Perfect (Lyrics).mp3" type="audio/mp3">
+</audio>
+
+
+<!-- ... Rest of the HTML code ... -->
+
+
+
+</body>
+</html>
